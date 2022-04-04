@@ -65,16 +65,6 @@ TEST_CASE(" the type of breach"){
     REQUIRE(breachClassifier->classifyBreach(54) == TOO_HIGH );
 }
 
-//TEST_CASE(" get the email alert"){
-//    TargetAlert* targetAlert = new TargetAlert(new EmailAlert);
-//    REQUIRE(getAlert(TO_EMAIL));
-//}
-//
-//TEST_CASE(" get the controller alert"){
-//    TargetAlert* targetAlert = new TargetAlert(new EmailAlert);
-//    REQUIRE(getAlert(TO_EMAIL));
-//}
-
 TEST_CASE(" the content of email when temp is too low"){
     LowBreachType lowBreach;
     REQUIRE(lowBreach.printBreachTypeInfo("admin") == "To: admin Hi, the temperature is too low\n");
